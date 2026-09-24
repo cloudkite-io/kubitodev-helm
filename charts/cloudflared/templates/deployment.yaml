@@ -37,6 +37,10 @@ spec:
         - --loglevel
         - {{ .Values.logLevel }}
         {{- end }}
+        {{- if .Values.protocol }}
+        - --protocol
+        - {{ .Values.protocol }}
+        {{- end }}
         {{- if .Values.local.enabled }}
         - --config
         - /etc/cloudflared/config.yaml
