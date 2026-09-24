@@ -48,7 +48,7 @@ readinessProbe: {}
 logLevel: info
 
 ## @param protocol: The protocol used to establish a connection between cloudflared and the Cloudflare global network. Available values are auto, http2, and quic.
-# protocol: auto
+protocol: auto
 
 ## @param priorityClassName The priority class name to use for the tunnel.
 priorityClassName: ""
