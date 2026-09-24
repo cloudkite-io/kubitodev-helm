@@ -65,6 +65,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `livenessProbe`                                 | Liveness probe configuration. Leave empty to disable. Requires metrics.enabled=true for a listening port.                                     | `{}`    |
 | `readinessProbe`                                | Readiness probe configuration. Leave empty to disable. Requires metrics.enabled=true for a listening port.                                    | `{}`    |
 | `logLevel`                                      | The log level to use for the tunnel.                                                                                                          | `info`  |
+| `protocol`                                      | The protocol used to establish a connection between cloudflared and the Cloudflare global network.                                            | `auto`  |
 | `priorityClassName`                             | The priority class name to use for the tunnel.                                                                                                | `""`    |
 | `metrics.enabled`                               | Enable metrics for prometheus monitoring. The crd monitoring.coreos.com/v1 must be already installed on the target.                           | `false` |
 | `metrics.port`                                  | The port to use for metrics.                                                                                                                  | `""`    |
